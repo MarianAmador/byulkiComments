@@ -1,5 +1,5 @@
 {
-  "name": "byulki-comments",
+  "name": "byulkiComments",
   "version": "1.0.0",
   "scripts": {
     "start": "json-server --watch db.json --port $PORT"
