@@ -1,4 +1,6 @@
-const API = 'http://localhost:3000/comments';
+const API = window.location.hostname === 'localhost'
+  ? 'http://localhost:3000/comments'
+  : 'https://byulkicomments.onrender.com/comments';
 
 async function apiGet() {
   const r = await fetch(API);
