@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>byulki comments 🐾</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="bk-root">
+  <header class="bk-header">
+    <div class="bk-paw bk-paw-1">🐾</div>
+    <div class="bk-paw bk-paw-2">🐾</div>
+    <div class="bk-paw bk-paw-3">🐾</div>
+    <div class="bk-header-left">
+      <div class="bk-title">byulki comments</div>
+      <div class="bk-subtitle">comentarios!</div>
+      <div class="bk-dots">
+        <div class="bk-dot bk-d1"></div>
+        <div class="bk-dot bk-d2"></div>
+        <div class="bk-dot bk-d3"></div>
+      </div>
+    </div>
+    
+    <div class="bk-counter">
+      <div class="bk-counter-num" id="bk-count">0</div>
+      <div class="bk-counter-lbl">comentarios</div>
+      <div class="bk-counter-paw">🐾</div>
+    </div>
+  </header>
+
+  <div class="bk-body">
+    <div class="bk-form">
+      <div class="bk-form-title">🐾 nuevo comentario</div>
+      <div class="bk-hr"></div>
+      <div class="bk-field">
+        <label class="bk-label" for="bk-user">Usuario</label>
+        <input class="bk-input" id="bk-user" type="text" placeholder="tu_nombre" maxlength="30" />
+        <div class="bk-errmsg" id="bk-eu">El nombre es requerido</div>
+      </div>
+      <div class="bk-field">
+        <label class="bk-label" for="bk-msg">Mensaje</label>
+        <textarea class="bk-textarea" id="bk-msg" placeholder="Escribe algo bonito... 🐱" maxlength="300"></textarea>
+        <div class="bk-char" id="bk-char">0 / 300</div>
+        <div class="bk-errmsg" id="bk-em">Mínimo 5 caracteres</div>
+      </div>
+      <button class="bk-btn" id="bk-btn">publicar 🐾</button>
+      <div class="bk-toast" id="bk-toast"></div>
+      <div class="bk-hr"></div>
+      <div class="bk-stats" id="bk-stats"></div>
+    </div>
+    
+    <div class="bk-wall">
+      <div class="bk-wall-hdr">
+        <div class="bk-wall-title">💬 comentarios recientes</div>
+        <button class="bk-reload" onclick="window.bkLoad()">↻ recargar</button>
+      </div>
+      <div class="bk-list" id="bk-list"></div>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
