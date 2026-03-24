@@ -44,15 +44,12 @@ Si no carga, espere unos minutos y recargue la página en render.
 * JavaScript ES6
 * JSON Server
 
+## Instalación local
 
-Inicia la API en modo watch:
- 
-```
-json-server --watch db.json --port 3000
-```
- 
-Abre `index.html` con Live Server en VS Code.
- 
+1. Clona o descarga el repositorio
+2. Instala JSON Server: `npm install -g json-server`
+3. Abre la terminal en la carpeta del proyecto y ejecuta: `json-server --watch db.json --port 3000`
+4. Abre `index.html` con Live Server en VS Code 
 ## Configuración de la API
  
 En `app.js`, la URL de la API se configura automáticamente según el entorno:
